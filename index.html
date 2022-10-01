@@ -5,18 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="container">
         <div id="display">
-            <h1>Metric/Imperial Unit Converter</h1>
-            <input type="number" id="input-field">
-            <button id="convert-btn">Submit</button>
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input type="number" id="input-field" placeholder="00">
+            <div id="btn"><button id="convert-btn">CONVERT</button></div>
         </div>
-        <div id="converted-units">
-            <div id="length"></div>
-            <div id="volume"></div>
-            <div id="Mass"></div>
+        <div id="converted-display">
+            <div class="unit-wrapper">
+                <h2>Length (Meter/Feet)</h2>
+                <p id="length">00 meters = 00 feet | 00 feet = 00 meters</p>
+            </div>
+            <div class="unit-wrapper">
+                <h2>Volume (Liters/Gallons)</h2>
+                <p id="volume">00 liters = 00 gallons | 00 gallons = 00 liters</p>
+            </div>
+            <div class="unit-wrapper">
+                <h2>Mass (kilograms/Pounds)</h2>
+                <p id="Mass">00 kilos = 00 pounds | 00 pounds = 00 kilo</p>
+            </div>
         </div>
     </div>
 </body>
